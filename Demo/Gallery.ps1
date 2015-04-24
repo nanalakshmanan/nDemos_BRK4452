@@ -16,5 +16,8 @@ Find-Module -DscResource xService
 # can find multiple versions of a module
 Find-Module -name xPSDesiredStateConfiguration -AllVersions
 
+# can search on authors
+Find-Module -Filter Microsoft
+
 # can install a module using Install-Module
 Install-Module xWordPress -Verbose 
