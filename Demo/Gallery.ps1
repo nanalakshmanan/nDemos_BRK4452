@@ -8,7 +8,7 @@ Find-Module -OutVariable Modules
 $Modules | Format-Table Name, Version, Tags -AutoSize
 
 # can filter based on tags 
-Find-Module -OutVariable FilteredModules -Tag DSCResourceKit
+Find-Module -OutVariable FilteredModules -Tag DSCResource
 
 # find module containing a resource
 Find-Module -DscResource xService

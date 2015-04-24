@@ -11,7 +11,7 @@ $Credential
 )
 
 $ScriptPath = Split-Path $MyInvocation.MyCommand.Path
-$WorkingFolder = 'D:\Nana\Test'
+. "$ScriptPath\0-CommonInit.ps1"
 
 configuration WMFInstall
 {

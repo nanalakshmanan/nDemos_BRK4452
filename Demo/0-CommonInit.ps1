@@ -1,7 +1,7 @@
 ﻿#region Initialization
-$PSDefaultParameterValues = @{'Find-Module:Repository'='PSGallery'}
-$PSDefaultParameterValues += @{'Install-Module:Repository'='PSGallery'}
-$PSDefaultParameterValues += @{'Publish-Module:Repository'='MSPSGallery'}
+$PSDefaultParameterValues = @{'Find-Module:Repository'='NanaGallery'}
+$PSDefaultParameterValues += @{'Install-Module:Repository'='NanaGallery'}
+$PSDefaultParameterValues += @{'Publish-Module:Repository'='NanaGallery'}
 
 $NodeName    = 'Nana-Test-1' 
 $OutputPath  = 'D:\Nana\Test\CompiledConfigurations'
