@@ -78,4 +78,4 @@ Configuration FourthCoffeeWebsite
     }
 }
 
-Export-ModuleMember FourthCoffeeWebsite
+Export-ModuleMember -Function FourthCoffeeWebsite

@@ -20,8 +20,3 @@ psedit "$ScriptPath\Invoke-Website.ps1"
 # This configuration can now be packaged in a module for sharing
 psedit "$ScriptPath\..\WebsiteModule\WebsiteModule.psm1"
 
-# Use Publish-Module to publish
-$Host.ui.WriteLine('Enter API Key for publishing')
-$ApiKey = $Host.UI.ReadLine()
-
-Publish-Module -Path "$ScriptPath\..\WebsiteModule" -NuGetApiKey $ApiKey -Tags Configuration
