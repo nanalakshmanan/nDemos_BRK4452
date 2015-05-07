@@ -9,7 +9,7 @@
     )
 
     # Import the module that defines custom resources
-    Import-DscResource -Module xNetworking
+    Import-DscResource -Module xNetworking, PSDesiredStateConfiguration
 
     Node $NodeName
     {

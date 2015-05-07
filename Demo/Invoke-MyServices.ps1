@@ -6,8 +6,8 @@
 . "$ScriptPath\Configuration.Service.2.ps1"
 
 # Create the MOF file using configuration parameters
-FourthCoffeeWebSite -NodeName        $NodeName `
-                    -OutputPath      $OutputPath
+MyServices -NodeName $NodeName `
+           -OutputPath $OutputPath
 
 #endregion Compile configuration
 

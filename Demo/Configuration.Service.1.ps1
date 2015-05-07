@@ -1,7 +1,7 @@
 ﻿Configuration MyServices
 {    
     # Import the module that defines custom resources
-    Import-DscResource -Module xNetworking
+    Import-DscResource -Module xNetworking, PSDesiredStateConfiguration
 
     Node 'Nana-Test-1'
     {
@@ -53,4 +53,5 @@
             Protocol     = 'TCP'            
             State        = 'Enabled'
        }
+    }
 }
