@@ -7,11 +7,11 @@ Find-Module -OutVariable Modules
 # modules are tagged 
 $Modules | Format-Table Name, Version, Tags -AutoSize
 
-# can filter based on tags 
-Find-Module -OutVariable FilteredModules -Tag DSCResource
+# can find modules based on tags 
+Find-Module -OutVariable FilteredModules -Tag DSCResourceKit
 
-# find module containing a resource
-Find-Module -DscResource xService
+# find DSC resources available in the gallery
+Find-DscResource -Name xService
 
 # can find multiple versions of a module
 Find-Module -name xPSDesiredStateConfiguration -AllVersions
