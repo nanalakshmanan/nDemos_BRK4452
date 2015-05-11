@@ -2,10 +2,10 @@
 . "$ScriptPath\0-CommonInit.ps1"
 
 # discover if there are required resources
-Find-Module -DscResource xWebsite
+Find-DscResource xWebsite
 
 # get the module
-Install-Module xWebAdministration -Verbose -Force
+Install-Module xWebAdministration -Verbose 
 
 # now start writing a configuration
 psedit "$ScriptPath\Configuration.Website.1.ps1"

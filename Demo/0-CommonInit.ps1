@@ -2,6 +2,7 @@
 $PSDefaultParameterValues = @{'Find-Module:Repository'='NanaGallery'}
 $PSDefaultParameterValues += @{'Install-Module:Repository'='NanaGallery'}
 $PSDefaultParameterValues += @{'Publish-Module:Repository'='NanaGallery'}
+$PSDefaultParameterValues += @{'Find-DscResource:Repository'='NanaGallery'}
 
 $NodeName    = 'Nana-Test-1' 
 $OutputPath  = 'D:\Nana\Test\CompiledConfigurations'
