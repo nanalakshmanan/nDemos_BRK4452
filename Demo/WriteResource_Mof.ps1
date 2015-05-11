@@ -6,13 +6,14 @@
 # using PowerShell cmdlets
 Find-Module -Name xDSCResourceDesigner
 
-Install-Module -Name xDSCResourceDesigner -Verbose -Force
+Install-Module -Name xDSCResourceDesigner -Verbose 
 
 # First model each of the resource property
 New-xDscResourceProperty -Name 'PropertyName' `
                          -Type String `
                          -Attribute Key `
-                         -ValidateSet 'a','b' `
+                         -ValueMap @('a','b') `
+                         -Values @('a', 'b') `
                          -Description 'Description of PropertyName' `
                          -OutVariable Property
 

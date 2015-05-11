@@ -8,16 +8,18 @@ Find-Module -OutVariable Modules
 $Modules | Format-Table Name, Version, Tags -AutoSize
 
 # can find modules based on tags 
-Find-Module -OutVariable FilteredModules -Tag DSCResourceKit
+# you can add your own tags
+Find-Module -OutVariable FilteredModules -Tag DSCResource
 
 # find DSC resources available in the gallery
-Find-DscResource -Name xService
+Find-DscResource -Name xWebsite
 
 # can find multiple versions of a module
 Find-Module -name xPSDesiredStateConfiguration -AllVersions
 
 # can search on authors
+# -Filter operates against the module manifest
 Find-Module -Filter Microsoft
 
 # can install a module using Install-Module
-Install-Module xWordPress -Verbose 
+Install-Module xWebAdministration -Verbose 

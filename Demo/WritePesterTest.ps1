@@ -2,7 +2,7 @@
 . "$ScriptPath\0-CommonInit.ps1"
 
 # Create a new test fixture in pester
-New-Fixture -Path "$($ResourcePath)\Tests" -Name nServiceHelper -Verbose
+New-Fixture -Path "$($ResourcePath)\Tests" -Name nService -Verbose
 
 # it creates a script file and the corresponding test file
 psedit "$($ResourcePath)\Tests\nService.ps1"
@@ -10,6 +10,14 @@ psedit "$($ResourcePath)\Tests\nService.ps1"
 psedit "$($ResourcePath)\Tests\nService.tests.ps1"
 
 # start filling in tests
+# and invoke the tests using Pester
+pushd "$($ResourcePath)\Tests"
+
+Invoke-Pester
+
+popd
+
+# here is the full list
 $Module = Get-Module -Name nPSDesiredStateConfiguration -ListAvailable
 
 psedit "$($Module.ModuleBase)\Tests\nService.ps1"

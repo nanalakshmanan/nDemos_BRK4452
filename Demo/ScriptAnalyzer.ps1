@@ -8,7 +8,7 @@ Find-Module -Name *scriptAnalyzer* -Verbose -OutVariable SAModule
 $SAModule.ProjectUri
 
 # Install the module
-Install-Module PSScriptAnalyzer -Verbose -ErrorAction SilentlyContinue -Force
+Install-Module PSScriptAnalyzer -Verbose 
 
 # Here are the list of commands
 Get-Command -Module PSScriptAnalyzer
