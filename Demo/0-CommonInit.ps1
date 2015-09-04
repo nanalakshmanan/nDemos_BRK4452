@@ -1,8 +1,8 @@
 ﻿#region Initialization
--$PSDefaultParameterValues = @{'Find-Module:Repository'='NanaGallery'}		
--$PSDefaultParameterValues += @{'Install-Module:Repository'='NanaGallery'}		
--$PSDefaultParameterValues += @{'Publish-Module:Repository'='NanaGallery'}		
--$PSDefaultParameterValues += @{'Find-DscResource:Repository'='NanaGallery'}
+$PSDefaultParameterValues = @{'Find-Module:Repository'='NanaGallery'}		
+$PSDefaultParameterValues += @{'Install-Module:Repository'='NanaGallery'}		
+$PSDefaultParameterValues += @{'Publish-Module:Repository'='NanaGallery'}		
+$PSDefaultParameterValues += @{'Find-DscResource:Repository'='NanaGallery'}
 
 # test machine name
 $NodeName    = 'Nana-Test-1' 
